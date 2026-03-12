@@ -1,11 +1,13 @@
+import { Search, BookOpen, Lightbulb, FlaskConical, Play, BarChart3, PenTool } from 'lucide-react';
+
 const steps = [
-  { step: '01', label: '文献检索', icon: '🔍' },
-  { step: '02', label: '论文阅读', icon: '📖' },
-  { step: '03', label: '问题发现', icon: '💡' },
-  { step: '04', label: '实验设计', icon: '🧪' },
-  { step: '05', label: '实验执行', icon: '⚙️' },
-  { step: '06', label: '数据分析', icon: '📊' },
-  { step: '07', label: '论文写作', icon: '✍️' },
+  { step: '01', label: '文献检索', icon: Search },
+  { step: '02', label: '论文阅读', icon: BookOpen },
+  { step: '03', label: '问题发现', icon: Lightbulb },
+  { step: '04', label: '实验设计', icon: FlaskConical },
+  { step: '05', label: '实验执行', icon: Play },
+  { step: '06', label: '数据分析', icon: BarChart3 },
+  { step: '07', label: '论文写作', icon: PenTool },
 ];
 
 const painPoints = [
@@ -34,7 +36,7 @@ export default function Product() {
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-3 mb-12 sm:mb-20">
           {steps.map((s) => (
             <div key={s.step} className="card-glow rounded-xl px-3 sm:px-5 py-3 sm:py-4 text-center transition-all duration-300">
-              <div className="text-xl sm:text-2xl mb-1">{s.icon}</div>
+              <div className="flex justify-center text-primary mb-1"><s.icon size={22} strokeWidth={1.5} /></div>
               <div className="text-[10px] sm:text-xs text-gray-500 mb-0.5">STEP {s.step}</div>
               <div className="text-xs sm:text-sm font-semibold text-gray-900 dark:text-white">{s.label}</div>
             </div>
