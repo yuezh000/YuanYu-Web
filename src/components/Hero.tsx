@@ -6,8 +6,7 @@ export default function Hero() {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/8 rounded-full blur-3xl" />
         {/* Orbit rings */}
-        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[610px] h-[610px] border border-primary/5 rounded-full" style={{ top: 'calc(50% + 30px)' }} />
-        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[810px] h-[810px] border border-primary/3 rounded-full" style={{ top: 'calc(50% + 30px)' }} />
+        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[810px] h-[810px] border rounded-full orbit-ring" style={{ top: 'calc(50% + 30px)' }} />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
