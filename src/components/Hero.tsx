@@ -6,8 +6,8 @@ export default function Hero() {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/8 rounded-full blur-3xl" />
         {/* Orbit rings */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/5 rounded-full" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-primary/3 rounded-full" />
+        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[610px] h-[610px] border border-primary/5 rounded-full" style={{ top: 'calc(50% + 30px)' }} />
+        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[810px] h-[810px] border border-primary/3 rounded-full" style={{ top: 'calc(50% + 30px)' }} />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
@@ -18,14 +18,14 @@ export default function Hero() {
         </div>
 
         <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-4 sm:mb-6">
-          <span className="text-white">可信任的AI伙伴</span>
+          <span className="text-gray-900 dark:text-white">可信任的AI伙伴</span>
           <br />
           <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
             点亮你的创造力
           </span>
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
           赋能每一位科研工作者，让学术探索更高效、更智能。
           <br className="hidden sm:block" />
           将确定性的重复认知劳动交给算力，将灵感发现交还给人类。
@@ -42,7 +42,7 @@ export default function Hero() {
           </a>
           <a
             href="#product"
-            className="px-8 py-3.5 rounded-full border border-white/10 text-gray-300 font-medium text-base hover:border-primary/30 hover:text-white transition-all"
+            className="px-8 py-3.5 rounded-full border border-gray-300 dark:border-white/10 text-gray-700 dark:text-gray-300 font-medium text-base hover:border-primary/30 hover:text-primary dark:hover:text-white transition-all"
           >
             了解更多
           </a>

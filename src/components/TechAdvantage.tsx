@@ -45,8 +45,8 @@ export default function TechAdvantage() {
                 {a.num}
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">{a.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{a.desc}</p>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{a.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{a.desc}</p>
               </div>
             </div>
           ))}

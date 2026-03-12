@@ -57,8 +57,8 @@ export default function DataCapability() {
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-5">
                 {c.icon}
               </div>
-              <h3 className="text-base font-bold text-white mb-2">{c.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{c.desc}</p>
+              <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">{c.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{c.desc}</p>
             </div>
           ))}
         </div>

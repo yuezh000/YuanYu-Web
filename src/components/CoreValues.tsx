@@ -53,9 +53,9 @@ export default function CoreValues() {
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary/20 transition-colors">
                 {v.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-1">{v.title}</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{v.title}</h3>
               <p className="text-sm text-primary mb-3">{v.subtitle}</p>
-              <p className="text-gray-400 text-sm leading-relaxed">{v.desc}</p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{v.desc}</p>
             </div>
           ))}
         </div>

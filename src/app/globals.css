@@ -11,6 +11,11 @@ html {
 }
 
 body {
+  color: #334155;
+  background: #f8fafc;
+}
+
+.dark body {
   color: #e2e8f0;
   background: #0a0e1a;
 }
@@ -34,12 +39,22 @@ body {
 
 /* Gradient border card */
 .card-glow {
-  background: linear-gradient(135deg, rgba(var(--primary), 0.1), rgba(15, 20, 40, 0.8));
-  border: 1px solid rgba(var(--primary), 0.15);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
 }
 
+.dark .card-glow {
+  background: linear-gradient(135deg, rgba(var(--primary), 0.1), rgba(15, 20, 40, 0.8));
+  border: 1px solid rgba(var(--primary), 0.15);
+}
+
 .card-glow:hover {
+  border-color: rgba(var(--primary), 0.3);
+  box-shadow: 0 4px 20px rgba(var(--primary), 0.08);
+}
+
+.dark .card-glow:hover {
   border-color: rgba(var(--primary), 0.4);
   box-shadow: 0 0 25px rgba(var(--primary), 0.1);
 }
@@ -53,6 +68,13 @@ body {
 /* Section styling */
 .section-title {
   @apply text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4;
+  background: linear-gradient(135deg, #1e293b, rgb(var(--primary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .section-title {
   background: linear-gradient(135deg, #fff, rgb(var(--primary)));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

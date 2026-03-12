@@ -64,8 +64,8 @@ export default function Features() {
               <div className={`absolute inset-0 bg-gradient-to-br ${f.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
               <div className="relative">
                 <div className="text-xs text-primary/60 font-mono mb-3">0{i + 1}</div>
-                <h3 className="text-base font-bold text-white mb-2">{f.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{f.desc}</p>
+                <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">{f.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{f.desc}</p>
               </div>
             </div>
           ))}

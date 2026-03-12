@@ -4,13 +4,13 @@ export default function CTA() {
       <div className="absolute left-0 right-0 top-0 gradient-line" />
 
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight">
           开启
           <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
             科研新范式
           </span>
         </h2>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-4 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-4 leading-relaxed">
           让科研工作者回归"定义问题的人"。
         </p>
         <p className="text-base text-gray-500 max-w-xl mx-auto mb-10">

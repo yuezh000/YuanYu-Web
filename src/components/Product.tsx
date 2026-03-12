@@ -36,14 +36,14 @@ export default function Product() {
             <div key={s.step} className="card-glow rounded-xl px-3 sm:px-5 py-3 sm:py-4 text-center transition-all duration-300">
               <div className="text-xl sm:text-2xl mb-1">{s.icon}</div>
               <div className="text-[10px] sm:text-xs text-gray-500 mb-0.5">STEP {s.step}</div>
-              <div className="text-xs sm:text-sm font-semibold text-white">{s.label}</div>
+              <div className="text-xs sm:text-sm font-semibold text-gray-900 dark:text-white">{s.label}</div>
             </div>
           ))}
         </div>
 
         {/* Pain points */}
         <div className="max-w-3xl mx-auto">
-          <h3 className="text-xl font-bold text-white text-center mb-2">科研人员的时间困境</h3>
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white text-center mb-2">科研人员的时间困境</h3>
           <p className="text-center text-gray-500 text-sm mb-8">中国科研信息化发展报告2026</p>
           <div className="space-y-3">
             {painPoints.map((p) => (
@@ -52,22 +52,22 @@ export default function Product() {
                 className={`flex items-center gap-3 sm:gap-4 rounded-xl px-4 sm:px-6 py-3 sm:py-4 ${
                   p.highlight
                     ? 'bg-primary/10 border border-primary/30'
-                    : 'bg-white/[0.02] border border-white/5'
+                    : 'bg-gray-50 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5'
                 }`}
               >
                 <div className={`text-lg sm:text-2xl font-bold shrink-0 w-14 sm:w-20 ${p.highlight ? 'text-primary' : 'text-gray-500'}`}>
                   {p.hours}
                 </div>
                 <div className="flex-1">
-                  <div className={`h-2 rounded-full ${p.highlight ? 'bg-primary/30' : 'bg-white/5'}`}>
+                  <div className={`h-2 rounded-full ${p.highlight ? 'bg-primary/30' : 'bg-gray-200 dark:bg-white/5'}`}>
                     <div
-                      className={`h-full rounded-full ${p.highlight ? 'bg-primary' : 'bg-gray-600'}`}
+                      className={`h-full rounded-full ${p.highlight ? 'bg-primary' : 'bg-gray-400 dark:bg-gray-600'}`}
                       style={{
                         width: p.highlight ? '15%' : `${(parseFloat(p.hours) / 20) * 100}%`,
                       }}
                     />
                   </div>
-                  <p className={`text-sm mt-1 ${p.highlight ? 'text-primary font-medium' : 'text-gray-400'}`}>
+                  <p className={`text-sm mt-1 ${p.highlight ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}`}>
                     {p.desc}
                   </p>
                 </div>
@@ -81,7 +81,7 @@ export default function Product() {
           {['高校学生', '学术研究人员', '医生', '企业R&D团队', '情报分析师'].map((u) => (
             <span
               key={u}
-              className="px-4 py-2 rounded-full bg-white/[0.03] border border-white/10 text-sm text-gray-400"
+              className="px-4 py-2 rounded-full bg-gray-50 dark:bg-white/[0.03] border border-gray-200 dark:border-white/10 text-sm text-gray-600 dark:text-gray-400"
             >
               {u}
             </span>
