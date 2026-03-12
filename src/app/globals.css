@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 53, 149, 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #e2e8f0;
+  background: #0a0e1a;
+}
+
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 30px rgba(var(--primary), 0.15);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(var(--primary), 0.5);
+}
+
+/* Grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(var(--primary), 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--primary), 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Gradient border card */
+.card-glow {
+  background: linear-gradient(135deg, rgba(var(--primary), 0.1), rgba(15, 20, 40, 0.8));
+  border: 1px solid rgba(var(--primary), 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.card-glow:hover {
+  border-color: rgba(var(--primary), 0.4);
+  box-shadow: 0 0 25px rgba(var(--primary), 0.1);
+}
+
+/* Animated gradient line */
+.gradient-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(var(--primary)), transparent);
+}
+
+/* Section styling */
+.section-title {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4;
+  background: linear-gradient(135deg, #fff, rgb(var(--primary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Particle dot */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
